@@ -1,0 +1,3 @@
+[submodule "Pod/Classes/BrightFutures"]
+	path = Pod/Classes/BrightFutures
+	url = https://github.com/Thomvis/BrightFutures.git
