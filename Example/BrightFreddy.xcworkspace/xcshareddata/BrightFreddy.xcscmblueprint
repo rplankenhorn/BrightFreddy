@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DE7824A3902C0B5365464EA258B244F7C4E23B0E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6ADA245F937D8ED6D99F5A7865E19F5267A169E2" : 0,
+    "DE7824A3902C0B5365464EA258B244F7C4E23B0E" : 0,
+    "93608FFF008CD82ADDFA850BB9C1630FA754586F" : 0,
+    "956D2B21DD155C49504BB67697A67F7C5351A353" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "99642FE2-D4C7-4F18-89D0-8CD58048F997",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6ADA245F937D8ED6D99F5A7865E19F5267A169E2" : "BrightFreddy\/Pod\/Classes\/Freddy\/",
+    "DE7824A3902C0B5365464EA258B244F7C4E23B0E" : "BrightFreddy\/",
+    "93608FFF008CD82ADDFA850BB9C1630FA754586F" : "BrightFreddy\/Pod\/Classes\/BrightFutures\/",
+    "956D2B21DD155C49504BB67697A67F7C5351A353" : "BrightFreddy\/Pod\/Classes\/BrightFutures\/Carthage\/Checkouts\/Result\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BrightFreddy",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/BrightFreddy.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bignerdranch\/Freddy",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6ADA245F937D8ED6D99F5A7865E19F5267A169E2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Thomvis\/BrightFutures.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "93608FFF008CD82ADDFA850BB9C1630FA754586F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/antitypical\/Result.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "956D2B21DD155C49504BB67697A67F7C5351A353"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rplankenhorn\/BrightFreddy",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DE7824A3902C0B5365464EA258B244F7C4E23B0E"
+    }
+  ]
+}

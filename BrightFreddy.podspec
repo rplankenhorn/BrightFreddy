@@ -18,17 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = "BrightFreddy merges BrightFutures and Freddy to create a seamless service layer with JSON parsing and a stable Futures and Promises implementation.  Please let me know if you want to contribute!"
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/BrightFreddy"
+  s.homepage         = "https://github.com/rplankenhorn/BrightFreddy"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Robbie Plankenhorn" => "rplankenhorn@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/BrightFreddy.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/rplankenhorn/BrightFreddy.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Pod/Classes/BrightFutures/BrightFutures/**/*.swift', 'Pod/Classes/BrightFutures/Carthage/Checkouts/Result/Result/*.swift', 'Pod/Classes/Freddy/Sources/*.swift'
   s.resource_bundles = {
     'BrightFreddy' => ['Pod/Assets/*.png']
   }

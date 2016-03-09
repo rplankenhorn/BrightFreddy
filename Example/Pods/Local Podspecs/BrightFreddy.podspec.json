@@ -3,20 +3,24 @@
   "version": "0.1.0",
   "summary": "BrightFreddy merges BrightFutures and Freddy to create a seamless service layer with JSON parsing and a stable Futures and Promises implementation.",
   "description": "BrightFreddy merges BrightFutures and Freddy to create a seamless service layer with JSON parsing and a stable Futures and Promises implementation.  Please let me know if you want to contribute!",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/BrightFreddy",
+  "homepage": "https://github.com/rplankenhorn/BrightFreddy",
   "license": "MIT",
   "authors": {
     "Robbie Plankenhorn": "rplankenhorn@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/BrightFreddy.git",
+    "git": "https://github.com/rplankenhorn/BrightFreddy.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
+  "source_files": [
+    "Pod/Classes/BrightFutures/BrightFutures/**/*.swift",
+    "Pod/Classes/BrightFutures/Carthage/Checkouts/Result/Result/*.swift",
+    "Pod/Classes/Freddy/Sources/*.swift"
+  ],
   "resource_bundles": {
     "BrightFreddy": [
       "Pod/Assets/*.png"
