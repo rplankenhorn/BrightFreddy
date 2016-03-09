@@ -1,0 +1,6 @@
+framework module BrightFreddy {
+  umbrella header "BrightFreddy-umbrella.h"
+
+  export *
+  module * { export * }
+}

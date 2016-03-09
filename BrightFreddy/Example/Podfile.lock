@@ -1,0 +1,22 @@
+PODS:
+  - BrightFreddy (0.1.0)
+  - Nimble (3.0.0)
+  - Quick (0.8.0)
+
+DEPENDENCIES:
+  - BrightFreddy (from `../`)
+  - Nimble (= 3.0.0)
+  - Quick (~> 0.8.0)
+
+EXTERNAL SOURCES:
+  BrightFreddy:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BrightFreddy: 129c98a4b0f262f6674b988a46b234577a7e3f83
+  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
+
+PODFILE CHECKSUM: 1a3627ad191b87a0704df4d84b5e24f98a2d449b
+
+COCOAPODS: 1.0.0.beta.5
