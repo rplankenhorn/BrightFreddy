@@ -28,12 +28,13 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/*.swift', 'Pod/Classes/BrightFutures/BrightFutures/**/*.swift', 'Pod/Classes/BrightFutures/Carthage/Checkouts/Result/Result/*.swift', 'Pod/Classes/Freddy/Sources/*.swift'
+  s.source_files = 'Pod/Classes/**/*.swift'
   s.resource_bundles = {
     'BrightFreddy' => ['Pod/Assets/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'BrightFutures', '~> 3.3.0'
+  s.dependency 'Freddy', '~> 2.0.2'
 end
