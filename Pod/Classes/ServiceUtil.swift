@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import BrightFutures
+import Result
 
 public enum ArrayEncodingStrategy {
     case PHP
