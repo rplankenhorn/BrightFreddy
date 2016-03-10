@@ -1,6 +1,0 @@
-[submodule "Pod/Classes/BrightFutures"]
-	path = Pod/Classes/BrightFutures
-	url = https://github.com/Thomvis/BrightFutures.git
-[submodule "Pod/Classes/Freddy"]
-	path = Pod/Classes/Freddy
-	url = https://github.com/bignerdranch/Freddy
