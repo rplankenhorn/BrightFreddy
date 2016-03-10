@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Freddy
 
 let emptyBody:NSData =  "".dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
 
@@ -27,11 +28,26 @@ public class HTTPResponse {
     public var bodyAsText: String {
         if let bodyT = self.bodyText {
             return bodyT
-        }
-        else {
+        } else {
             self.bodyText = NSString(data: body, encoding: NSUTF8StringEncoding)! as String
             return self.bodyText!
         }
+    }
+    
+}
+
+extension HTTPResponse {
+    
+    public func bodyJSON() throws -> JSON {
+        return try self.body.jsonObject()
+    }
+    
+}
+
+extension NSData {
+    
+    func jsonObject() throws -> JSON {
+        return try JSON(data: self)
     }
     
 }
