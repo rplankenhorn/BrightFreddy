@@ -24,7 +24,7 @@ public class Service {
         var fullUrl = path
         
         if let e = environment {
-            fullUrl = e.fullURLWithResourcePath(path) ?? path
+            fullUrl = e.fullURLWithResourcePath(path)
         }
         
         return fullUrl
