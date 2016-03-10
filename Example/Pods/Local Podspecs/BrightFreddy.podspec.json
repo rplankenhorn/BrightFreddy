@@ -17,6 +17,7 @@
   },
   "requires_arc": true,
   "source_files": [
+    "Pod/Classes/*.swift",
     "Pod/Classes/BrightFutures/BrightFutures/**/*.swift",
     "Pod/Classes/BrightFutures/Carthage/Checkouts/Result/Result/*.swift",
     "Pod/Classes/Freddy/Sources/*.swift"
