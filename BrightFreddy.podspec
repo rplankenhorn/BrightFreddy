@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "BrightFreddy"
   s.version          = "0.1.0"
-  s.summary          = "BrightFreddy merges BrightFutures and Freddy to create a seamless service layer with JSON parsing and a stable Futures and Promises implementation."
+  s.summary          = "BrightFreddy merges BrightFutures and Freddy to create a seamless service layer."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
