@@ -38,12 +38,12 @@ public class Service {
                 let json = try response.bodyJSON()
                 
                 if let dotPath = dotPath, let jsonDotPathObject = json[dotPath] {
-                    return Result<JSON, NSError>(value: jsonDotPathObject)
+                    return Result.Success(jsonDotPathObject)
                 } else {
-                    return Result<JSON, NSError>(value: json)
+                    return Result.Success(json)
                 }
             } catch {
-                return Result<JSON, NSError>(error: NSError(domain: "", code: 0, userInfo: nil))
+                return Result.Failure(NSError(domain: "", code: 0, userInfo: nil))
             }
         }
     }
@@ -54,9 +54,9 @@ public class Service {
         return getJSONObject(path, headers: headers, dotPath: dotPath).flatMap { json -> Result<T, NSError> in
             do {
                 let object = try T(json: json)
-                return Result<T, NSError>(value: object)
+                return Result.Success(object)
             } catch {
-                return Result<T, NSError>(error: NSError(domain: "", code: 0, userInfo: nil))
+                return Result.Failure(NSError(domain: "", code: 0, userInfo: nil))
             }
         }
     }
@@ -73,13 +73,13 @@ public class Service {
                         objects.append(try T(json: jsonObject))
                     }
                     
-                    return Result<[T], NSError>(value: objects)
+                    return Result.Success(objects)
                 }
             } catch {
                 
             }
             
-            return Result<[T], NSError>(error: NSError(domain: "", code: 0, userInfo: nil))
+            return Result.Failure(NSError(domain: "", code: 0, userInfo: nil))
         }
     }
     
@@ -91,9 +91,9 @@ public class Service {
             return ServiceUtil.post(fullURLWithPath(path), body: body, headers: headers).flatMap { response -> Result<JSON, NSError> in
                 do {
                     let json = try response.bodyJSON()
-                    return Result<JSON, NSError>(value: json)
+                    return Result.Success(json)
                 } catch {
-                    return Result<JSON, NSError>(error: NSError(domain: "", code: 0, userInfo: nil))
+                    return Result.Failure(NSError(domain: "", code: 0, userInfo: nil))
                 }
             }
         } catch {
@@ -107,9 +107,9 @@ public class Service {
         return postJSONObject(object.toJSON(), path: path, headers: headers).flatMap { json -> Result<D, NSError> in
             do {
                 let object = try D(json: json)
-                return Result<D, NSError>(value: object)
+                return Result.Success(object)
             } catch {
-                return Result<D, NSError>(error: NSError(domain: "", code: 0, userInfo: nil))
+                return Result.Failure(NSError(domain: "", code: 0, userInfo: nil))
             }
         }
     }

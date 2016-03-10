@@ -13,12 +13,12 @@ import Result
 extension Promise {
     
     func completeWith(value: T) -> Promise<T, E> {
-        self.complete(Result<T, E>(value: value))
+        self.complete(Result.Success(value))
         return self
     }
     
     func completeWith(error: E) -> Promise<T, E> {
-        self.complete(Result<T, E>(error: error))
+        self.complete(Result.Failure(error))
         return self
     }
     
