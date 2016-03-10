@@ -1,5 +1,11 @@
 PODS:
-  - BrightFreddy (0.1.0)
+  - BrightFreddy (0.1.0):
+    - BrightFutures (~> 3.3.0)
+    - Freddy (~> 2.0.2)
+  - BrightFutures (3.3.0):
+    - Result (~> 1.0)
+  - Freddy (2.0.2)
+  - Result (1.0.2)
 
 DEPENDENCIES:
   - BrightFreddy (from `../`)
@@ -9,7 +15,10 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BrightFreddy: dc1ec564c71de18412d5be911dabf908cd552b4b
+  BrightFreddy: 8ac986adbf11f8ade804b0a3138f15107c1d8a99
+  BrightFutures: f4b491b3107487a0469973a74f81f334eb0ed60a
+  Freddy: e53713b8d5be02dbf5f4132c44d899d99eb09a6b
+  Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
 
 PODFILE CHECKSUM: 6287ce2d57b470381986fab7ca41314215c39918
 
