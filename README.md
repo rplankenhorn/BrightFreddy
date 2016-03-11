@@ -1,6 +1,6 @@
 # BrightFreddy
 
-[![CI Status](http://img.shields.io/travis/Robbie Plankenhorn/BrightFreddy.svg?style=flat)](https://travis-ci.org/Robbie Plankenhorn/BrightFreddy)
+[![CI Status](http://img.shields.io/travis/rplankenhorn/BrightFreddy.svg?style=flat)](https://travis-ci.org/Robbie Plankenhorn/BrightFreddy)
 [![Version](https://img.shields.io/cocoapods/v/BrightFreddy.svg?style=flat)](http://cocoapods.org/pods/BrightFreddy)
 [![License](https://img.shields.io/cocoapods/l/BrightFreddy.svg?style=flat)](http://cocoapods.org/pods/BrightFreddy)
 [![Platform](https://img.shields.io/cocoapods/p/BrightFreddy.svg?style=flat)](http://cocoapods.org/pods/BrightFreddy)
