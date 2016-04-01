@@ -50,7 +50,7 @@ public class Service {
     
     // MARK: Get Object
     
-    public class func getObject<T: JSONDecodable>(path: String, headers: [String : String] = [:], dotPath: String? = nil) -> Future<T, NSError> {
+    public class func getObject<T: JSONDecodable>(type: T.Type, path: String, headers: [String : String] = [:], dotPath: String? = nil) -> Future<T, NSError> {
         return getJSONObject(path, headers: headers, dotPath: dotPath).flatMap { json -> Result<T, NSError> in
             do {
                 let object = try T(json: json)
@@ -63,7 +63,7 @@ public class Service {
     
     // MARK: Get Objects
     
-    public class func getObjects<T: JSONDecodable>(path: String, headers: [String : String] = [:], dotPath: String? = nil) -> Future<[T], NSError> {
+    public class func getObjects<T: JSONDecodable>(type: T.Type, path: String, headers: [String : String] = [:], dotPath: String? = nil) -> Future<[T], NSError> {
         return getJSONObject(path, headers: headers).flatMap { json -> Result<[T], NSError> in
             do {
                 if case .Array(let jsonObjects) = json {
