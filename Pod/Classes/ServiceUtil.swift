@@ -118,7 +118,7 @@ public class ServiceUtil {
         let promise = Promise<HTTPResponse, NSError>()
         
         let task = session.dataTaskWithRequest(request, completionHandler: { data, response, error -> Void in
-            let data: NSData = (data != nil ? data! : NSData())
+            let data: NSData = data ?? NSData()
             
             if let error = error {
                 promise.completeWith(error)
