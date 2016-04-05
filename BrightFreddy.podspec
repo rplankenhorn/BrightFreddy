@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.author           = { "Robbie Plankenhorn" => "rplankenhorn@gmail.com" }
   s.source           = { :git => "https://github.com/rplankenhorn/BrightFreddy.git", :tag => s.version.to_s }
 
-  spec.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.11'
   s.requires_arc = true
 
