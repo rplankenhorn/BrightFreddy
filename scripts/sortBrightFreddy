@@ -1,0 +1,3 @@
+SCRIPT_DIR="$( cd "$( dirname "$0" )" && pwd )/"     #Project directory, one directory up
+
+perl $SCRIPT_DIR/sort-xcode.pl $SCRIPT_DIR/../Example/BrightFreddy.xcodeproj
