@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14E7F9881C9326D6003B2FC1 /* GetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7F9871C9326D6003B2FC1 /* GetTests.swift */; };
+		14E7F98A1C932A97003B2FC1 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7F9891C932A97003B2FC1 /* Helpers.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		09ABDB9F3CBCF12F5F007F6F /* Pods-BrightFreddy_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrightFreddy_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrightFreddy_Example/Pods-BrightFreddy_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		14E7F9871C9326D6003B2FC1 /* GetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTests.swift; sourceTree = "<group>"; };
+		14E7F9891C932A97003B2FC1 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		1BBAF106BD458106EBF26116 /* Pods_BrightFreddy_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrightFreddy_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3349BDC7BBFAEEF0D4E0369D /* BrightFreddy.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BrightFreddy.podspec; path = ../BrightFreddy.podspec; sourceTree = "<group>"; };
 		52BBE405AB01DAE0CFF1CC65 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -81,12 +85,12 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for BrightFreddy */,
-				607FACE81AFB9204008FA782 /* Tests */,
-				607FACD11AFB9204008FA782 /* Products */,
-				C01F1573A7DC16A15C1000A9 /* Pods */,
 				1AD5ABE70AA1BFBC189E0F3C /* Frameworks */,
+				C01F1573A7DC16A15C1000A9 /* Pods */,
+				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				607FACD11AFB9204008FA782 /* Products */,
+				607FACE81AFB9204008FA782 /* Tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,12 +106,12 @@
 		607FACD21AFB9204008FA782 /* Example for BrightFreddy */ = {
 			isa = PBXGroup;
 			children = (
+				607FACD31AFB9204008FA782 /* Supporting Files */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
 			);
 			name = "Example for BrightFreddy";
 			path = BrightFreddy;
@@ -124,8 +128,10 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				14E7F9871C9326D6003B2FC1 /* GetTests.swift */,
+				14E7F9891C932A97003B2FC1 /* Helpers.swift */,
+				607FACEB1AFB9204008FA782 /* Tests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -141,9 +147,9 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				983EC3DA40927A1000B02BFF /* LICENSE */,
 				3349BDC7BBFAEEF0D4E0369D /* BrightFreddy.podspec */,
 				52BBE405AB01DAE0CFF1CC65 /* README.md */,
-				983EC3DA40927A1000B02BFF /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -246,9 +252,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,8 +365,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +374,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E7F9881C9326D6003B2FC1 /* GetTests.swift in Sources */,
+				14E7F98A1C932A97003B2FC1 /* Helpers.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

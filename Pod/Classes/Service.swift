@@ -29,6 +29,10 @@ public class Service {
         
         return fullUrl
     }
+
+}
+
+extension Service  {
     
     // MARK: Get JSON Object
     
@@ -83,6 +87,10 @@ public class Service {
         }
     }
     
+}
+
+extension Service {
+    
     // MARK: Post JSON Object
     
     public class func postJSONObject(object: JSON, path: String, headers: [String : String] = [:]) -> Future<JSON, NSError> {
@@ -113,5 +121,5 @@ public class Service {
             }
         }
     }
-
+    
 }
