@@ -31,12 +31,12 @@ public extension String {
     
     func withParams(params: Dictionary<String, AnyObject>, arrayEncodingStrategy: ArrayEncodingStrategy = ArrayEncodingStrategy.MultiParam) -> String {
         let endpoint = self.hasPrefix("?") ? self :  self + "?"
-        return  endpoint + (NSString(data: ServiceUtil.asParams(params, arrayEncodingStrategy: arrayEncodingStrategy), encoding: NSUTF8StringEncoding)! as String)
+        return  endpoint + (NSString(data: Service.asParams(params, arrayEncodingStrategy: arrayEncodingStrategy), encoding: NSUTF8StringEncoding)! as String)
     }
     
 }
 
-public class ServiceUtil {
+public class Service {
     
     public class func asJson(obj: AnyObject, jsonWriteOptions: NSJSONWritingOptions = NSJSONWritingOptions()) -> NSData? {
         do  {

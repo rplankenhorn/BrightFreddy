@@ -11,33 +11,12 @@ import BrightFutures
 import Freddy
 import Result
 
-public protocol ServiceEnvironment {
-    func baseUrl() -> String
-    func fullURLWithResourcePath(path:String) -> String
-}
-
-public class Service {
-    
-    public static var environment:ServiceEnvironment? = nil
-    
-    private class func fullURLWithPath(path:String) -> String {
-        var fullUrl = path
-        
-        if let e = environment {
-            fullUrl = e.fullURLWithResourcePath(path)
-        }
-        
-        return fullUrl
-    }
-
-}
-
 extension Service  {
     
     // MARK: Get JSON Object
     
     public class func getJSONObject(path: String, headers: [String : String] = [:], dotPath: String? = nil) -> Future<JSON, NSError> {
-        return ServiceUtil.get(fullURLWithPath(path), headers: headers).flatMap { response -> Result<JSON, NSError> in
+        return get(fullURLWithPath(path), headers: headers).flatMap { response -> Result<JSON, NSError> in
             do {
                 let json = try response.bodyJSON()
                 
@@ -96,7 +75,7 @@ extension Service {
     public class func postJSONObject(object: JSON, path: String, headers: [String : String] = [:]) -> Future<JSON, NSError> {
         do {
             let body = try object.serialize()
-            return ServiceUtil.post(fullURLWithPath(path), body: body, headers: headers).flatMap { response -> Result<JSON, NSError> in
+            return post(fullURLWithPath(path), body: body, headers: headers).flatMap { response -> Result<JSON, NSError> in
                 do {
                     let json = try response.bodyJSON()
                     return Result.Success(json)
