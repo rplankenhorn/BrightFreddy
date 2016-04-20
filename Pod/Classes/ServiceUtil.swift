@@ -121,7 +121,7 @@ public class ServiceUtil {
             let data: NSData = data ?? NSData()
             
             if let error = error {
-                promise.completeWith(error)
+                promise.failure(error)
             } else {
                 let httpResponse = response as! NSHTTPURLResponse
                 
@@ -130,7 +130,7 @@ public class ServiceUtil {
                     responseHeaders[headerKey as! String] = headerValue
                 }
             
-                promise.completeWith(HTTPResponse(statusCode: httpResponse.statusCode, body: data, headers: responseHeaders))
+                promise.success(HTTPResponse(statusCode: httpResponse.statusCode, body: data, headers: responseHeaders))
             }
         })
         
